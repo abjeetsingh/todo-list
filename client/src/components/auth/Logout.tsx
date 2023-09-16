@@ -1,17 +1,10 @@
-import React from "react";
-
 const Logout = () => {
-  return (
-    <p
-      onClick={() => {
-        localStorage.removeItem("token");
-        window.location.href = "/";
-      }}
-      className="cursor-pointer"
-    >
-      Logout
-    </p>
-  );
-};
+  return(
+    <p onClick={() => {
+      localStorage.removeItem('token');
+      window.location.href = '/';
+    }} className="cursor-pointer" >Logout</p>
+  )
+}
 
 export default Logout;
