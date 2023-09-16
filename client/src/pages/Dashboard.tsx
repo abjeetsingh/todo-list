@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
-
-import Navbar from "../components/Navbar";
 import TodoForm from "../components/todo/TodoForm";
 import axios from "axios";
 import TodoList, { Todo } from "../components/todo/TodoList";
+import Navbar from "../components/Navbar";
 const Dashboard = () => {
   const [todoList, setTodoList] = useState<Todo[]>([]);
   useEffect(() => {
